@@ -7,7 +7,7 @@ nodes = JSON.parse(File.read(schema))
 
 Vagrant.configure('2') do |config|
   config.vm.box = 'minimal/centos6'
-  config.vm.provider 'libvirt' do |l|
+  config.vm.provider 'virtualbox' do |l|
     l.memory = 1024
     l.cpus = 1
   end
