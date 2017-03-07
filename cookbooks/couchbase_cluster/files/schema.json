@@ -1,0 +1,22 @@
+{
+  "master"    : "192.168.33.10",
+  "user"      : "root",
+  "password"  : "secretpass",
+  "nodes": [
+    {
+      "hostname"    : "clstr10node",
+      "ip_address"  : "192.168.33.21",
+      "cookbook"    : "couchbase_cluster"
+    },
+    {
+      "hostname"    : "clstr20node",
+      "ip_address"  : "192.168.33.22",
+      "cookbook"    : "couchbase_cluster"
+    },
+    {
+      "hostname"    : "clstr00serv",
+      "ip_address"  : "192.168.33.10",
+      "cookbook"    : "couchbase_cluster"
+    }
+  ]
+}
