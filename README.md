@@ -4,12 +4,12 @@ Cookbook is builded by default on Centos6.6
 
 Cookbook is created to add cluster nodes very easily using json-like file.
 VirtualBox was used to build VMs as VBox allows usage of concurrent builds in
-[Vagrantfile](../Vagrantfile)
+[Vagrantfile](../blob/master/Vagrantfile)
 
 ###Config
 #####schema.json
 All parts of cookbook uses single one config file:
-[schema.json](../cookbooks/couchbase_cluster/files/schema.json)] format
+[schema.json](../blob/master/cookbooks/couchbase_cluster/files/schema.json)] format
 ```json
 {
   "master"    : "192.168.33.10",
@@ -32,7 +32,7 @@ All parts of cookbook uses single one config file:
 `master` node uses IP notation instead of hostname
 ###Usage
 using vagrant: `vagrant up`
-using [Rakefile](../Rakefile)
+using [Rakefile](../blob/master/Rakefile)
 ```shell
 $ rake couchbase:reload            # delete vboxes and run vagrant up again
 ```
