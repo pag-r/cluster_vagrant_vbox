@@ -9,7 +9,7 @@ VirtualBox was used to build VMs as VBox allows usage of concurrent builds in
 ###Config
 #####schema.json
 All parts of cookbook uses single one config file:
-[schema.json](../master/cookbooks/couchbase_cluster/files/schema.json)] format
+[schema.json](../master/cookbooks/couchbase_cluster/files/schema.json) format
 ```json
 {
   "master"    : "192.168.33.10",
