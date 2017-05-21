@@ -1,4 +1,4 @@
-#Couchbase cluster cookbook using VirtualBox, Chef and Vagrant
+# Couchbase cluster cookbook using VirtualBox, Chef and Vagrant
 
 Cookbook is builded by default on Centos6.6
 
@@ -6,8 +6,8 @@ Cookbook is created to add cluster nodes very easily using json-like file.
 VirtualBox was used to build VMs as VBox allows usage of concurrent builds in
 [Vagrantfile](../master/Vagrantfile)
 
-###Config
-#####schema.json
+### Config
+##### schema.json
 All parts of cookbook uses single one config file:
 [schema.json](../master/cookbooks/couchbase_cluster/files/schema.json) format
 ```json
@@ -30,14 +30,14 @@ All parts of cookbook uses single one config file:
 }
 ```
 `master` node uses IP notation instead of hostname
-###Usage
+### Usage
 using vagrant: `vagrant up`
 using [Rakefile](../master/Rakefile)
 ```shell
 $ rake couchbase:reload            # delete vboxes and run vagrant up again
 ```
 
-###Couchbase Rest API
+### Couchbase Rest API
 Using rakefile GET commands for RESTAPI can be made. No further configuration is
 needed. Rakefile uses schema.json configuration.
 ```shell
@@ -45,7 +45,7 @@ rake couchbase:restapi[command]  # run command using API like /pools/default/buc
 ```
 If no command is set GET `/pools/nodes` is used.
 
-##License
+## License
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
