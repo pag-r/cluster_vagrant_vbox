@@ -31,8 +31,9 @@ All parts of cookbook uses single one config file:
 ```
 `master` node uses IP notation instead of hostname
 ### Usage
-using vagrant: `vagrant up`
-using [Rakefile](../master/Rakefile)
+#### using vagrant: 
+`vagrant up`
+#### using [Rakefile](../master/Rakefile)
 ```shell
 $ rake couchbase:reload            # delete vboxes and run vagrant up again
 ```
